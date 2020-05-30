@@ -1,0 +1,174 @@
+{
+  "type": "AdaptiveCard",
+  "body": [
+    {
+      "type": "TextBlock",
+      "size": "Large",
+      "text": "CSUDH Bot",
+      "separator": true,
+      "horizontalAlignment": "Center",
+      "maxLines": 0,
+      "weight": "Bolder"
+    },
+    {
+      "type": "Image",
+      "altText": "CSUDH_logo",
+      "url": "https://www.csudh.edu/Assets/csudh-sites/brand/images/2018-06-18-csudh-logo-stacked-1-line-on-burgundy.png",
+      "separator": true,
+      "horizontalAlignment": "Center",
+      "selectAction": {
+        "type": "Action.OpenUrl",
+        "id": "Site",
+        "title": "HomePage",
+        "url": "https://www.csudh.edu/"
+      }
+    },
+    {
+      "type": "TextBlock",
+      "text": "Hey there! I am the CSUDH Bot, ask me any question and I will try to answer it as best as I can!",
+      "wrap": true,
+      "weight": "Bolder",
+      "size": "Medium",
+      "horizontalAlignment": "Center"
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.ShowCard",
+          "title": "Campus Map",
+          "card": {
+            "type": "AdaptiveCard",
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "body": [
+              {
+                "type": "Image",
+                "altText": "campusMap",
+                "url": "https://www.csudh.edu/Assets/csudh-sites/campus-map-direction/images/csudh-campus-map-201908.png",
+                "selectAction": {
+                  "type": "Action.OpenUrl",
+                  "url": "https://www.csudh.edu/Assets/csudh-sites/campus-map-direction/docs/csudh-campus-map-201908.pdf",
+                  "title": "CSUDH Map"
+                }
+              }
+            ]
+          },
+          "style": "positive"
+        }
+      ]
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.ShowCard",
+          "title": "Campus Calender",
+          "card": {
+            "type": "AdaptiveCard",
+            "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+            "body": [
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.OpenUrl",
+                    "title": "Loker Student Union and Student Life Calender",
+                    "url": "http://ems.csudh.edu/mastercalendar/MasterCalendar.aspx"
+                  }
+                ]
+              },
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.OpenUrl",
+                    "title": "Academic Calander",
+                    "url": "https://www.csudh.edu/academic-affairs/academic-calendar/"
+                  }
+                ]
+              },
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.OpenUrl",
+                    "title": "University Theatre and Dance Programs",
+                    "url": "https://www.csudh.edu/theatre-arts/program-productions/"
+                  }
+                ]
+              },
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.OpenUrl",
+                    "title": "University Art Gallery Schedule of Events",
+                    "url": "https://gallery.csudh.edu/"
+                  }
+                ]
+              },
+              {
+                "type": "ActionSet",
+                "actions": [
+                  {
+                    "type": "Action.OpenUrl",
+                    "title": "Toro Athletics",
+                    "url": "https://gotoros.com/calendar.aspx?vtype=list&preset=current"
+                  }
+                ]
+              }
+            ]
+          },
+          "style": "positive"
+        }
+      ]
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.OpenUrl",
+          "title": "General FAQ",
+          "url": "https://www.csudh.edu/uac/frequently-asked-questions/",
+          "id": "UAC"
+        }
+      ]
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.OpenUrl",
+          "title": "Financial Aid",
+          "url": "https://www.csudh.edu/financial-aid/",
+          "id": "FinancialAid"
+        }
+      ]
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.OpenUrl",
+          "title": "Scholarships",
+          "url": "https://www.csudh.edu/financial-aid/scholarships/",
+          "id": "Schlr"
+        }
+      ]
+    },
+    {
+      "type": "ActionSet",
+      "actions": [
+        {
+          "type": "Action.OpenUrl",
+          "title": "Apply to CSUDH",
+          "style": "destructive",
+          "url": "https://www.csudh.edu/future-students/apply/"
+        }
+      ]
+    }
+  ],
+  "$schema": "http://adaptivecards.io/schemas/adaptive-card.json",
+  "version": "1.0",
+  "verticalContentAlignment": "Center"
+}
